@@ -1,3 +1,4 @@
 language: clojure
 lein: lein2
+before_script: setup_profiles.sh
 script: lein do immutant install, immutant test
