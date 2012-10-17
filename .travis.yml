@@ -1,4 +1,4 @@
 language: clojure
 #lein: lein2
-before_script: lein plugin install lein-immutant 0.12.0
+before_script: "ls ~/.lein/ && cat ~/.lein/profiles.clj && lein plugin install lein-immutant 0.12.0"
 script: lein immutant install && lein immutant test
