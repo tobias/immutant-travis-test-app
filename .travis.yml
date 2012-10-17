@@ -1,3 +1,4 @@
 language: clojure
-lein: lein2
-script: lein2 with-profile ci immutant install && lein2 with-profile ci immutant test
+#lein: lein2
+before_script: lein plugin install lein-immutant 0.12.0
+script: lein immutant install && lein immutant test
